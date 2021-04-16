@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
         //hooks
         drawerLayout = findViewById(R.id.drawer_layout);
-        // ik nieuwe ding toevoegen (test)
         //toolbar
 
         //navigation drawer menu
