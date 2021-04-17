@@ -1,10 +1,16 @@
 package com.golemstats.app;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
+=======
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+>>>>>>> master
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
@@ -12,12 +18,22 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
+<<<<<<< HEAD
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     //variables
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+=======
+public class MainActivity extends AppCompatActivity {
+>>>>>>> master
+
+    //variables
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    Toolbar toolbar;
+    ActionBarDrawerToggle toggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +44,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
+<<<<<<< HEAD
         // tool bar
+=======
+        //toolbar
+        setSupportActionBar(toolbar);
+        //navigation drawer menu
+
+
+
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+>>>>>>> master
         setSupportActionBar(toolbar);
         //navigation drawer menu
         navigationView.bringToFront();
@@ -40,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+<<<<<<< HEAD
     @Override
     public void onBackPressed() {
 
@@ -54,5 +82,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return true;
+=======
+
+>>>>>>> master
     }
+
+    @Override
+
+    public boolean onOptionsItemSelected(android.view.MenuItem item) {
+    return toggle.onOptionsItemSelected(item);
+
+}
+
+
 }
