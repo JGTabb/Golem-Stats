@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/menu_logo_home"/>
+        <item
+            android:id="@+id/nav_networkstats"
+            android:title="Network Stats"
+            android:icon="@drawable/menu_logo_graph"/>
+        <item
+            android:id="@+id/nav_handbook"
+            android:title="Handbook"
+            android:icon="@drawable/menu_logo_book"/>
+        <item
+            android:id="@+id/nav_money"
+            android:title="Price Stats"
+            android:icon="@drawable/menu_logo_money"/>
+
+    </group>
+
+</menu>
