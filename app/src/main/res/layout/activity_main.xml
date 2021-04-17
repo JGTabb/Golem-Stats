@@ -39,8 +39,7 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        android:background="#00FFFFFF" />
+        layout="@layout/toolbar" />
 
     <TextView
         android:id="@+id/textView2"
